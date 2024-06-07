@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-transperent">
+  <div class="container">
+    <a class="navbar-brand" href="index.php"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Направления
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">UX/UI дизайн</a></li>
+            <li><a class="dropdown-item" href="#">Системная аналитика</a></li>
+            <li><a class="dropdown-item" href="#">Моушн-дизайн</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contact.php">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galery.php">Галерея</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img src="img/slider1.jpg" alt="Los Angeles" class="d-block" style="width:100%;height:720px;" >
+      <div class="carousel-caption">
+        <h3>Продвижение мобильных приложений (ASO)</h3>
+        <p>Помогаем бизнесу вывести приложение в ТОП</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider-2.jpg" alt="Chicago" class="d-block" style="width:100%;height:720px;">
+      <div class="carousel-caption">
+        <h3>Архитектурная визуализация в реальном времени</h3>
+        <p>Рост продаж и инвестиций для вашего бизнеса</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider-3.jpg" alt="New York" class="d-block" style="width:100%;height:720px;">
+      <div class="carousel-caption">
+        <h3>Применяем пользовательский опыт для создания эффективных бизнес-решений</h3>
+        <p>Дизайн интерфейсов</p>
+      </div>  
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+
+<div class="container">
+    <h1 style="color:white;text-align:center;margin-top:50px;">Галерея</h1>
+    <div class="galery">
+    <div class="img1"><img style="
+    width: 100%;
+    height: 100%;
+" src="img/img1.png"> </div>
+    <div class="img2"><img style="
+    height: 100%;
+" src="img/img2.png"> </div>
+    
+</div>
+<div class="galery1">
+    <div class="img3"><img style="
+    width: 100%;
+    height: 100%;
+" src="img/Rectangle15.png"> </div>
+    
+    <div class="img5"><img style="
+    width: 100%;height:100%;
+" src="img/Rectangle14.png"> </div>
+
+    
+
+
+
+    <div class="img4"><img style="
+    width: 100%;
+    height: 100%;
+" src="img/img3.png"> </div>
+    
+    <div class="img6"><img style="
+    width: 100%;
+" src="img/imf5.png"> </div>
+
+    
+</div>
+
+    
+
+</div>
+</div>
+<div class="container">
+<img  class="linefooter" src="img/linefooter.png">
+            </div>
+<footer style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,129,1) 50%, rgba(5,31,36,1) 100%);" class="bg-body-tertiary text-center">
+<div class="row">
+
+    <div class="brandFooter"><img src="img/logo.png" style="padding-right:50%">
+    <img src="img/vk.png" style="padding-right:1%;"><img src="img/vector.svg">
+            </div>
+        </div>
+</footer>
+</body>
+</html>

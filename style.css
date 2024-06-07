@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(2,0,36);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,129,1) 50%, rgba(5,31,36,1) 100%);
+}
+.navbar img{
+    height: 150px;
+    padding-top: 10%;
+}
+.nav-link {
+    color: white !important;
+}
+.banner h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+.banner p{
+    color: white;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
+}
+.directions{
+    background: rgb(225,241,255);
+background: linear-gradient(90deg, rgba(225,241,255,1) 0%, rgba(255,255,255,1) 100%);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 10% 10% 10% 10%;
+margin-top: 100px;
+height: 1100px;
+}
+.directions-choice{
+    display: flex;
+    flex-wrap: wrap ;
+    width: 500px;
+}
+.directions-base img{
+    width: 500px !important;
+    height: 400px !important;
+}
+.base-color{
+    background-color: #ffffff;
+    padding: 100px;
+    margin-left: -50px;
+    height: 825px;
+}
+.myBtn{
+    background-color: rgba(0, 0, 0, 0);
+    width: 500px;
+    height: 91px;
+    display: flex;
+    border: 0;
+}
+.slider h1{
+    font-size: 24px;
+}
+.myBtn:focus{ background-color: #ffffff;
+    display: flex;
+    border-radius: 15px;
+    height: 90px;
+    
+    width: 500px;}
+.directions img{
+    width: 60px;
+    height: 60px;
+    
+}
+.directions-content-header{
+    margin-top: 25px;
+}
+.slider{
+    display: flex;
+}
+
+.line {
+    width: 10px !important;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 97% !important;
+}
+.btn {
+ 
+    width: 400px;
+    height: 60px;
+    color: white !important;
+    margin-left: 50px;
+}
+
+.card-news {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(12, 20px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: white;
+    }
+    
+    .div1 { grid-area: 2 / 2 / 4 / 3; }
+    .div2 { grid-area: 2 / 3 / 3 / 4; }
+    .div3 { grid-area: 3 / 3 / 4 / 4; }
+    .div4 { grid-area: 2 / 6 / 4 / 8; }
+    .div5 { grid-area: 10 / 4 / 12 / 6; }
+    .div6 { grid-area: 5 / 3 / 10 / 9; }
+
+    .button {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        background: #90EBFF !important;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        border: none;
+      }
+      .button-sovet{
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 12px;
+        background: #90EBFF !important;
+        padding: 0px 30px 0px 30px;
+
+        text-decoration: none;
+      }
+      .card{
+        display: inline-block;
+        
+      }
+     
+    .contactus{
+        background-color: white;
+        margin-top: 100px;
+        display: flex;
+    }
+    .contacttext{
+        padding: 20%;
+    }
+    .contactus h5{
+        font-weight: lighter;
+    }
+    input[type="text"] {
+        display: block;
+    }
+    input[type="email"] {
+        display: block;
+    }
+    input[type="text"] {
+        display: block;
+    }
+    .butn {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        background: #D9D9D9;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        margin-top: 10%;
+        height: 70px;
+        width: 350px;
+      }
+      .galery {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        .galery1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .img5 { grid-area: 1 / 2 / 3 / 4; }
+            .img3 { grid-area: 2 / 1 / 4 / 2; }
+            .img6 { grid-area: 3 / 2 / 4 / 4; }
+            .img4 { grid-area: 1 / 1 / 2 / 2; }
+       
+        .linefooter{
+            width: 1300px;
+            margin-top: 150px;
+        }
