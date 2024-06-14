@@ -13,7 +13,7 @@ body{
 .nav-link {
     color: white !important;
 }
-.banner h1{
+.banner h2{
     color: white;
     font-size: 40px;
     font-weight: 700;
@@ -42,10 +42,12 @@ height: 1100px;
     flex-wrap: wrap ;
     width: 500px;
 }
-.directions-base img{
+.out {
     width: 500px !important;
-    height: 400px !important;
+    height:400px !important;
 }
+
+
 .base-color{
     background-color: #ffffff;
     padding: 100px;
@@ -59,7 +61,7 @@ height: 1100px;
     display: flex;
     border: 0;
 }
-.slider h1{
+.slider h2{
     font-size: 24px;
 }
 .myBtn:focus{ background-color: #ffffff;
@@ -69,10 +71,79 @@ height: 1100px;
     
     width: 500px;}
 .directions img{
-    width: 60px;
-    height: 60px;
+    width: 30px ;
+    height: 30px;
     
 }
+.callback{
+    padding-left: 300px;
+    width: 200px;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 1000px;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80% !important; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .callbacktitle{
+    color: #7EAFDB;
+    text-align: center;
+  }
+  .callbackbutn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #90EBFF;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: block;
+    height: 70px;
+    width: 350px;
+    margin:25px;
+  }
+  .callbackfields{
+    margin-left: 450px;
+  }
+  
+  
+.footerBrand{
+    color: white;
+    font-size: 100px;
+    display: inline;
+    margin-right: 50%;
+}
+ 
 .directions-content-header{
     margin-top: 25px;
 }
@@ -196,4 +267,7 @@ height: 1100px;
         .linefooter{
             width: 1300px;
             margin-top: 150px;
+        }
+        footer{
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,129,1) 50%, rgba(5,31,36,1) 100%);
         }

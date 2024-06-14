@@ -1,17 +1,4 @@
-// $(document).ready(function(){
-//     $('.myBtn').click(function(){
-//         var id = $(this).data('id'); // Получаем data-id нажатой кнопки
-//         console.log("id кнопки: " + id); // Выводим id в консоль для проверки
-//         $.ajax({
-//             type: 'POST',
-//             url: '', // Пустая строка указывает на текущую страницу
-//             data: {id: id}, // Передаем id на сервер
-//             success: function(response){
-//                 $('#result').html(response); // Отображаем результат на странице
-//             }
-//         });
-//     });
-// });
+
 document.addEventListener('DOMContentLoaded', function() {
     var buttons = document.querySelectorAll('.myBtn');
     buttons.forEach(function(button) {
@@ -22,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Функция для отправки AJAX-запроса на сервер PHP
 function fetchDataFromPHP(id) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -39,7 +25,6 @@ function fetchDataFromPHP(id) {
     xhr.send();
 }
 
-// Функция для отображения полученных данных
 function displayData(data) {
     var outputDiv = document.getElementById('output');
     outputDiv.innerHTML = '<div class="base-color"><img src="img/' + data.img + ' " class="out"><h5>' + data.h1 + '</h5><ul><li><p>' + data.p1 + '</p></li><li><p>' + data.p2 + '</p></li><ul></div>';
@@ -47,39 +32,39 @@ function displayData(data) {
 
 
 
-$(document).ready(function() {
-  
-    $('#submitButn').click(function() {
-       
-        var phoneNumber = $('#phoneInput').val();
-        
-        
-        if (!validatePhoneNumber(phoneNumber)) {
-            
-            alert('Пожалуйста, введите корректный номер телефона в формате +7 999 999 99 99.');
+document.addEventListener('DOMContentLoaded', function() {
+    var submitBtn = document.getElementById('submitButn');
+    submitBtn.addEventListener('click', function() {
+        var nameInput = document.getElementById('nameInput');
+        var phoneInput = document.getElementById('phoneInput');
+        if (!validateName(nameInput.value)) {
+            alert('Пожалуйста, введите ваше имя.');
             return;
         }
-
-        
+        if (!validatePhoneNumber(phoneInput.value)) {
+            alert('Пожалуйста, введите корректный номер телефона.');
+            return;
+        }
+        var modal1 = document.getElementById('myModal');
+        var modal2 = document.getElementById('myModal2');
+        modal1.style.display = "none";
+        modal2.style.display = "block";
     });
-
-   
-    function validatePhoneNumber(phoneNumber) {
-       
-        var regex = /^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$/;
-        
-        return regex.test(phoneNumber);
-    }
 });
 
+function validateName(name) {
+    return name.trim() !== '';
+}
+
+function validatePhoneNumber(phone) {
+    return /^(\+7\s?)?(\d{3}[\s-]?)?[\d\s-]{7,10}$/.test(phone);
+}
 
 $(document).ready(function() {
-    
     $('.callback').click(function() {
         $('#myModal').show();
     });
 
-   
     $('.close').click(function() {
         $('#myModal').hide();
     });
@@ -92,59 +77,28 @@ $(document).ready(function() {
             $('#myModal').hide();
         }
     });
-
-  
-    $('#submitButn').click(function() {
-       
-        $('#myModal').hide();
-        $('#myModal2').show();
-       
-        setTimeout(function() {
-            $('#myModal2').hide();
-        }, 3000); 
-    });
 });
 
 
 
-$(document).ready(function() {
-    $('#emailForm').submit(function(event) {
-        event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
-        var formData = $(this).serialize(); // Получаем данные формы в формате, который можно отправить на сервер
 
-        $.ajax({
-            type: 'POST',
-            url: 'send_email.php', // Путь к файлу на сервере, который будет отправлять электронное письмо
-            data: formData,
-            success: function(response) {
-                alert('Письмо успешно отправлено!');
-            },
-            error: function(xhr, status, error) {
-                alert('Возникла ошибка при отправке письма.');
-                console.log(xhr.responseText);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var showHideBtn = document.getElementById('showHideBtn');
+
+    // Проверка наличия кнопки с идентификатором 'showHideBtn'
+    if (showHideBtn) {
+        // Если кнопка существует, добавляем обработчик события
+        showHideBtn.addEventListener('click', function() {
+            if (showHideBtn.textContent === 'Показать еще') {
+                // Если текст кнопки "Показать еще", изменяем его на "Скрыть"
+                showHideBtn.textContent = 'Скрыть';
+            } else {
+                // Если текст кнопки "Скрыть", изменяем его на "Показать еще"
+                showHideBtn.textContent = 'Показать еще';
             }
         });
-    });
-});
-
-$(document).ready(function() {
-    $('#emailForm').submit(function(event) {
-        event.preventDefault(); // Предотвращаем отправку формы по умолчанию
-
-        var formData = $(this).serialize(); // Получаем данные формы в формате, который можно отправить на сервер
-
-        $.ajax({
-            type: 'POST',
-            url: 'send_email.php', // Путь к файлу на сервере, который будет отправлять электронное письмо
-            data: formData,
-            success: function(response) {
-                alert('Письмо успешно отправлено!');
-            },
-            error: function(xhr, status, error) {
-                alert('Возникла ошибка при отправке письма.');
-                console.log(xhr.responseText);
-            }
-        });
-    });
+    }
 });
