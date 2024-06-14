@@ -28,6 +28,9 @@ body{
     margin-top: 10%;
     
 }
+.block {
+    display: none;
+}
 .directions{
     background: rgb(225,241,255);
 background: linear-gradient(90deg, rgba(225,241,255,1) 0%, rgba(255,255,255,1) 100%);
@@ -74,6 +77,10 @@ height: 1100px;
     width: 30px ;
     height: 30px;
     
+}
+.block img{
+    width: 500px !important;
+    height: 400px !important;
 }
 .callback{
     padding-left: 300px;
