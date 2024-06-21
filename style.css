@@ -25,7 +25,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 10% !important;
     
 }
 .block {
@@ -251,7 +251,22 @@ height: 1100px;
         margin-top: 10%;
         height: 70px;
         width: 350px;
-      }
+    }
+
+    .butn.valid {
+        background-color: #4CAF50; /* зеленый */
+    }
+
+    .butn.sending {
+        background-color: #2196F3; /* синий */
+    }
+
+    .butn.sent {
+        background-color: #008000; /* зеленый */
+    }
+    .invalid {
+        border: 3px solid red;
+    }
       .galery {
         display: grid;
         grid-template-columns: 2fr 1fr;
