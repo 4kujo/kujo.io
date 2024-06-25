@@ -293,3 +293,63 @@ height: 1100px;
         footer{
             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,129,1) 50%, rgba(5,31,36,1) 100%);
         }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            overflow: auto;
+            text-align: center;
+          }
+          .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 20px;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          }
+          .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1100;
+          }
+          .nav-link::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 65px;
+            height: 2px;
+            background-color: white;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+          }
+          .nav-link:hover::before {
+            transform: scaleX(1);
+          }
+          .nav-link active::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 65px;
+            height: 2px;
+            background-color: white;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+          }
+          .nav-link:hover::before {
+            transform: scaleX(1);
+          }
+          @media screen and (max-width:500px) {
+                .card-news{
+
+                    margin-top: 10%;
+                }
+          }
